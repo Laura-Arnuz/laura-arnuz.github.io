@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadata Open Graph data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <meta name="Elmo's CV" content="Curriculum Vitae de Elmo." />
+    <meta property="og:title" content="Elmo's CV" />
+    <meta property="og:type" content="CV - Proyecto final" />
+
+    <!-- Datos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display|Libre Baskerville|Lora|Nunito Sans|Spicy Rice">
+    <title>Elmo's CV</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" /> 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Elmo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>¡Hola! <br> Soy Elmo</h1>
+          <p id="intro">¿Te interesa conocerme?</p>
+          <a href="#info_personal"><button class="centro_btn"> Elmo personal</button> </a> 
+          <a href="#habilidades"><button class="centro_btn">Mis habilidades</button> </a>
+          <a href="#experiencia"><button class="centro_btn">Mi experiencia</button> </a>
+        </div>
+      </div> 
+
+      <!-- Texto Lorem Ipsum: https://es.lipsum.com/ -->
+      <div class="secciones">
+        <div> <a id="info_personal"> <h2>Elmo personal</h2> </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin semper dignissim tortor in fermentum. 
+                Aliquam tincidunt at libero interdum tempor. 
+                Ut mi diam, ornare vel blandit ut, eleifend sit amet velit. 
+                Sed a volutpat mauris, eget ultrices orci. 
+                Cras varius risus eu sem euismod pellentesque. 
+                Nullam ultricies neque erat, ut elementum dolor suscipit in. 
+                Phasellus suscipit enim dignissim, tempus mi ac, mollis magna. 
+                Nam molestie nisi vitae justo congue semper. 
+                Sed vel auctor purus. </p>
+                <br>
+        </div>
+
+        <div> <a id="habilidades"> <h2>Mis habilidades</h2> </a>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Sed at sem efficitur, auctor eros at, suscipit ex.</li>
+            <li>Maecenas varius dolor vehicula eros tristique, vitae mollis lacus convallis.</li>
+            <li>Mauris congue nulla nec nisi feugiat lobortis.</li>
+            <li>Donec a eros id sapien efficitur facilisis eu sit amet magna.</li>
+            <li>Integer consectetur urna in magna lacinia, non iaculis mauris imperdiet.</li>
+            <li>Suspendisse condimentum lacus ac justo consectetur, in rhoncus metus dictum.</li>
+            <li>Fusce eu mi in mi porta commodo ac iaculis nunc.</li>
+            <p> Pero lo más importante es que soy <span id="elmo">rojo y adorable</span>.</p>
+       <br> </div>
+
+        <div> <a id="experiencia"> <h2>Mi experiencia</h2> </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin semper dignissim tortor in fermentum. 
+                Aliquam tincidunt at libero interdum tempor. 
+                Ut mi diam, ornare vel blandit ut, eleifend sit amet velit. 
+                Sed a volutpat mauris, eget ultrices orci. 
+                Cras varius risus eu sem euismod pellentesque. 
+                Nullam ultricies neque erat, ut elementum dolor suscipit in. 
+                Phasellus suscipit enim dignissim, tempus mi ac, mollis magna. 
+                Nam molestie nisi vitae justo congue semper. 
+                Sed vel auctor purus. </p>
+                <br>
+        </div>
+
+<!-- Realizado usando W3Schools https://www.w3schools.com/ Todas las fotos fueron tomadas del Twitter oficial de Elmo -->
+<!-- Galeria de fotos Lightbox dentro del acordeón-->
+        <button class="accordion"> <h2>Fotos</h2></button>
+          <div class="panel">
+          <p>Mis fotos fueron originalmente publicadas en <span id="elmo"><a href="https://twitter.com/elmo" target="_blank"> mi página oficial de Twitter </a> </span>. </p>
+
+<!-- Imágenes miniatura dentro del lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="elmo01-sm.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="elmo02-sm.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="elmo03-sm.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="elmo01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="elmo02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="elmo03.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo" src="elmo01-sm.jpg" onclick="currentSlide(1)" alt="Elmo">
+    </div>
+    <div class="column">
+      <img class="demo" src="elmo02-sm.jpg" onclick="currentSlide(2)" alt="Elmo">
+    </div>
+    <div class="column">
+      <img class="demo" src="elmo03-sm.jpg" onclick="currentSlide(3)" alt="Elmo">
+    </div>
+
+  </div>
+</div>
+        </div>
+
+      </div>
+
+      <footer>
+
+ <!-- Botón para cambiar el color del fondo - Gracias a Vishnu Dileesh on codepen https://codepen.io/vishnu_dileesh/pen/eYJMvVX
+y a las explicaciones de los usuarios de GitHub y StackOverflow -->
+
+ <button onclick="changeColor()" type="button" class="centro_btn">Cambiar color de fondo</button>
+<br><br>
+      </footer>
+      <script src="index.js"></script>
+
+</body>
+</html>
